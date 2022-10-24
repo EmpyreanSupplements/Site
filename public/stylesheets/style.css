@@ -1,0 +1,42 @@
+*{
+  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#navbar {
+  display: flex;
+  height: 10vh;
+  color: white;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+.navlist {
+  display: flex;
+  align-items: center;
+  /*justify-content: center;*/
+  width: 50%;
+  margin-right: 30%;
+
+}
+.navlist li {
+  list-style: none;
+  padding: 0 20px;
+  font-size: 1.0rem;
+}
+.navlist li a {
+  text-decoration: none;
+  color: black;
+}
+.navlist li a:active {
+  color: aqua;
+}
+
+.logo img {
+  width: 15%;
+}
+img {
+  border: 3px solid white;
+  margin: 10px;
+}
