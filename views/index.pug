@@ -7,7 +7,7 @@ html
         .foto 
           img(src="/images/fly.png", alt="foto") 
         h1.h-primary Bem vindo a FlyBetter!
-        div.small Encontre aqui seus destions preferidos com preços acessíveis.
+        div.small Encontre aqui seus destinos preferidos com preços acessíveis.
 
     section#mission-section
         h2.h-secondary Aqui estão os destinos mais visitados da semana:  
@@ -15,12 +15,53 @@ html
         ui.navlista  
             lis #[p(href="#" class="active") Cidades Populares]
             lis #[p(href="#") Destinos Populares]
-    section#photo-section 
-        div.fotocontent 
-          img(src="/images/jeri_resized.png", alt="fotos")
-          img(src="/images/portoseguro_resized.png", alt="fotos")
-          img(src="/images/SP_resized.png", alt="fotos")
-          img(src="/images/gramado_resized.png", alt="fotos")
-    section#photoinfo-section 
-        div.photoinfo 
-          h3 Porto Seguro 
+    section#photo-section
+        div.container
+          div.card
+            img(src="/images/portoseguro_resized.png", class="foto1")
+            div.cardbody
+              div.cardlocal 
+                h2  Porto Seguro  
+              div.cardtitulo
+                h3  Conheça as maravilhas! 
+              div.cardtexto 
+                p 5.391 Hóteis disponíveis com preços a partir de R$290
+              div.button
+                button.btn(type='button') Ver Ofertas 
+          // Card 2 
+          div.card
+            img(src="/images/SP_resized.png", class="foto1")
+            div.cardbody
+              div.cardlocal 
+                h2  São Paulo   
+              div.cardtitulo
+                h3  Conheça as maravilhas! 
+              div.cardtexto 
+                p 14.631 Hóteis disponíveis com preços a partir de R$297 
+              div.button
+                button.btn(type='button') Ver Ofertas
+          // Card 3
+          div.card
+            img(src="/images/rj_cristo.jpeg", class="foto1")
+            div.cardbody
+              div.cardlocal 
+                h2 Rio de Janeiro    
+              div.cardtitulo
+                h3  Conheça as maravilhas! 
+              div.cardtexto 
+                p 29.287 Hóteis disponíveis com preços a partir de R$328
+              div.button
+                button.btn(type='button') Ver Ofertas 
+          // Card 4
+          div.card
+            img(src="/images/gramado.jpg", class="foto1")
+            div.cardbody
+              div.cardlocal 
+                h2 Gramado    
+              div.cardtitulo
+                h3  Conheça as maravilhas! 
+              div.cardtexto 
+                p 7.275 Hóteis disponíveis com preços a partir de R$547 
+              div.button
+                button.btn(type='button') Ver Ofertas              
+  include includes/footer.pug
