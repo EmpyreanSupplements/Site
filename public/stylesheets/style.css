@@ -1,42 +1,119 @@
-*{
-  
+*,
+*:before,
+*:after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  min-height: 100vh;
+  background: white;
+}
+
 #navbar {
   display: flex;
   height: 10vh;
-  color: white;
-  background-color: white;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  justify-content: space-between;
 }
 .navlist {
   display: flex;
   align-items: center;
-  /*justify-content: center;*/
-  width: 50%;
-  margin-right: 30%;
+  justify-content: right;
+  width: 70%;
 
 }
 .navlist li {
   list-style: none;
-  padding: 0 20px;
+  padding: 6 15px;
   font-size: 1.0rem;
+  margin-top: 25px;
 }
 .navlist li a {
   text-decoration: none;
   color: black;
+  border-radius: 20px;
+  padding: 15px;
+  font-family: 'Poppins',sans-serif;
 }
-.navlist li a:active {
-  color: aqua;
+.navlist li a::after {
+  content: "";
+  display: block;
+  background-color: rgb(94, 193, 240);
+  height: 3px;
+  width: 0%;
+  top: 50;
+  right: -5;
+  transition: 0.3s;
+}
+.navlist li a:hover::after {
+  width: 100%;
 }
 
 .logo img {
-  width: 15%;
+  width: 40%;
 }
 img {
-  border: 3px solid white;
+  border: 3px;
   margin: 10px;
+}
+#intro-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 65vh;
+  background: url("/images/rjcristo.jpeg") center center/cover no-repeat;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+#mission-section {
+  font-family:'Poppins', sans-serif;
+  font-size: 12px;
+  margin: 20px; 
+}
+.navlista {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  box-shadow: 0 2px 4px 0 rgba(56, 105, 238, 0.2);
+  list-style: none;
+  padding: 6 15px;
+  font-size: 1.0rem;
+}
+.navlista lis {
+  list-style: none;
+  padding: 6 15px;
+}
+.navlista lis p {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+.navlista lis p::after{
+  content: "";
+  display: block;
+  background-color: rgb(94, 193, 240);
+  height: 3px;
+  width: 0%;
+}
+.navlista lis p:hover::after{
+  width: 100%;
+
+}
+.fotocontent img {
+  border-radius: 20px;
+  width: 100%;
+}
+.fotocontent {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+#photoinfo-section {
+  margin-left: 80;
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
 }

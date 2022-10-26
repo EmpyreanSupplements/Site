@@ -1,8 +1,26 @@
 html 
   include includes/header.pug
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 
   body 
-    div.header 
-      h1= "Escolha para aonde quer ir"
-    div.content
-      h1= "Viagens:"
+    section#intro-section
+        .foto 
+          img(src="/images/fly.png", alt="foto") 
+        h1.h-primary Bem vindo a FlyBetter!
+        div.small Encontre aqui seus destions preferidos com preços acessíveis.
+
+    section#mission-section
+        h2.h-secondary Aqui estão os destinos mais visitados da semana:  
+        nav#navbar2 
+        ui.navlista  
+            lis #[p(href="#" class="active") Cidades Populares]
+            lis #[p(href="#") Destinos Populares]
+    section#photo-section 
+        div.fotocontent 
+          img(src="/images/jeri_resized.png", alt="fotos")
+          img(src="/images/portoseguro_resized.png", alt="fotos")
+          img(src="/images/SP_resized.png", alt="fotos")
+          img(src="/images/gramado_resized.png", alt="fotos")
+    section#photoinfo-section 
+        div.photoinfo 
+          h3 Porto Seguro 
