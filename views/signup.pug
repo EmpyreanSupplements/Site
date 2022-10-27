@@ -1,0 +1,28 @@
+html 
+  title #{title}  
+  include includes/header.pug
+  body
+    div.center
+      h1 Cadastro 
+      <form>
+        div.txt_field
+          input(type="text")
+          <span></span>
+          <label> Nome de usuário </label>
+        div.txt_field
+          input(type="password")
+          <span></span>
+          <label> Senha </label>
+        div.txt_field
+          input(type="email")
+          <span></span>
+          <label> E-mail </label>
+        div.txt_field
+          input(type="date")
+          <span></span>
+          <label> Data de Nascimento </label>
+        div.pass 
+          input(type="submit", value="Cadastre-se")
+    </form>
+  include includes/footer.pug
+  block footer 

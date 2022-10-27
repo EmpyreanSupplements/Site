@@ -11,12 +11,13 @@ html
   body 
     // - navbar
     nav#navbar 
-        .logo 
+        .logo
+          <a href="./"> 
             img(src="/images/fly.png", alt="logo")
+          </a>
         ul.navlist 
-            li #[a(href="./") Home]
-            li #[a(href="./about") About]
+            li #[a(href="./") Início]
+            li #[a(href="./about") Sobre]
             li #[a(href="./login") Login]
-            li #[a(href="#") Cadastro]
-            li #[a(href="#") Perfil]
+            li #[a(href="./signup") Cadastro]
   block content   

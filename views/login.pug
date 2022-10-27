@@ -3,7 +3,7 @@ html
   include includes/header.pug
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   block content    
-  <body class="logon">
+  body
     div.center
       h1 Login 
       <form>
@@ -19,7 +19,7 @@ html
           p Forgot Password?
           input(type="submit", value="Login")
         .signup 
-          p Not a member? <a href="#">Signup</a>
+          p Not a member? <a href="./signup">Signup</a>
     </form>
   include includes/footer.pug
   block footer 
