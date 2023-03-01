@@ -4,22 +4,23 @@ html
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   block content    
   body
-    div.center
-      h1 Login 
-      <form>
-        div.txt_field
-          input(type="text")
-          <span></span>
-          <label> Username </label>
-        div.txt_field
-          input(type="password")
-          <span></span>
-          <label> Password </label>
-        div.pass 
-          p Forgot Password?
-          input(type="submit", value="Login")
-        .signup 
-          p Not a member? <a href="./signup">Signup</a>
+    main 
+      div.center
+        h1 Login 
+        form(method="post")
+          div.txt_field
+            input(type="text", name="email")
+            <span></span>
+            <label> Username </label>
+          div.txt_field
+            input(type="password", name="password")
+            <span></span>
+            <label> Password </label>
+          div.pass 
+            p Forgot Password?
+            input(type="submit", value="Login")
+          .signup 
+            p Not a member? <a href="./signup">Signup</a>
     </form>
   include includes/footer.pug
   block footer 

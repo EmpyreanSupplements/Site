@@ -6,15 +6,18 @@
 body {
     background:#fff;
 }
+
 .footer{
     background: #202020;
     height: auto;
     width: 100%;
     font-family: 'Poppins',sans-serif;
-    padding-top: 40px;
+    margin-top: 7%;
+    padding-top: 2%;
     color: #fff;
     position:absolute;
 }
+
 .footer-content {
     display: flex;
     align-items: center;

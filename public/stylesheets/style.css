@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+  min-height: 100%;
+}
+
 body {
   min-height: 100vh;
   background: rgb(255, 255, 255);
@@ -14,7 +19,7 @@ body {
 
 #navbar {
   display: flex;
-  height: 10vh;
+  height: 5em;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
   justify-content: space-between;
 }
@@ -26,9 +31,9 @@ body {
 }
 .navlist li {
   list-style: none;
-  padding: 6 15px;
+  padding: 6 2%;
   font-size: 1.0rem;
-  margin-top: 25px;
+  margin-top: 2%;
 }
 .navlist li a {
   text-decoration: none;
@@ -55,14 +60,14 @@ body {
   width: 40%;
 }
 img {
-  margin: 10px;
+  margin: 10%;
 }
 #intro-section {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 65vh;
+  height: 40em;
   background: url("/images/rjcristo.jpeg") center center/cover no-repeat;
   color: white;
   font-family: 'Poppins', sans-serif;
@@ -105,20 +110,23 @@ img {
 .container {
   display: flex;
 }
+
 .card {
-  width: 300px;
-  height: 500px;
+  width: 30%;
+  height: 40em;
   background-color: white;
   margin: 30px;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.10) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+
 .foto1 {
-  width: 60%;
   height: 40%;
   border-radius: 50%;
-  margin-top: 20px;
-  margin-left: 60px;
+  margin-top: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 
 .cardbody {
@@ -127,15 +135,18 @@ img {
   text-align: center;
   font-family: 'Poppins', sans-serif;
 }
+
 .cardlocal {
   font-size: 16px;
   margin: 10px 0;
 }
+
 .cardtexto {
   font-size: 12px;
   width: 250px;
   margin: 0 auto;
 }
+
 .btn {
   margin-top: 70px;
   text-align: center;
@@ -152,10 +163,16 @@ img {
   transition: 1s;
   background-color: rgb(4, 0, 255);
 }
+
+main {
+  display: flex;
+  flex-direction: row;
+  min-height: 80%;
+}
+
 .about {
   width: 100%;
   padding: 78px 0px;
-
 }
 .photo img {
   height: auto;
@@ -191,10 +208,9 @@ text p {
 /* LOGIN CSS */
 .center{
   position:relative;
-  bottom: 50%;
   left: 50%;
   transform: translate(-50%, 10%);
-  width: 500px;
+  width: 30%;
   background: white;
   border-radius: 10px;
   box-shadow: 10px 10px 15px rgba(0,0,0,0.05);
@@ -287,4 +303,29 @@ input[type="submit"]:hover{
 }
 .signup_link a:hover{
   text-decoration: underline;
+}
+
+@media (max-width: 1360px)
+{
+  .about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px
+  }
+
+  .container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 50px;
+  }
+
+  .card {
+    display: block;
+    width: 100%;
+    margin: auto;
+  }
 }
